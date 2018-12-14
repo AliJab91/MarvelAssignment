@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04A0EAE221C26C9D00018FCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EAE121C26C9D00018FCB /* AppDelegate.m */; };
+		04A0EAE821C26C9D00018FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A0EAE621C26C9D00018FCB /* Main.storyboard */; };
+		04A0EAEB21C26C9D00018FCB /* MarvelJSONParsing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EAE921C26C9D00018FCB /* MarvelJSONParsing.xcdatamodeld */; };
+		04A0EAED21C26CAD00018FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A0EAEC21C26CAD00018FCB /* Assets.xcassets */; };
+		04A0EAF021C26CAD00018FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A0EAEE21C26CAD00018FCB /* LaunchScreen.storyboard */; };
+		04A0EAF321C26CAD00018FCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EAF221C26CAD00018FCB /* main.m */; };
+		04A0EAFD21C26CAD00018FCB /* MarvelJSONParsingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EAFC21C26CAD00018FCB /* MarvelJSONParsingUITests.m */; };
+		04A0EB0A21C26D0400018FCB /* JsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB0921C26D0400018FCB /* JsonData.m */; };
+		04A0EB0D21C26DD100018FCB /* DataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB0C21C26DD100018FCB /* DataObject.m */; };
+		04A0EB1021C26F3A00018FCB /* ResutlsArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB0F21C26F3A00018FCB /* ResutlsArray.m */; };
+		04A0EB1921C2723E00018FCB /* Urls.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB1821C2723E00018FCB /* Urls.m */; };
+		04A0EB1C21C2724A00018FCB /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB1B21C2724A00018FCB /* Events.m */; };
+		04A0EB1F21C2725800018FCB /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB1E21C2725800018FCB /* Series.m */; };
+		04A0EB2221C2726400018FCB /* Stories.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB2121C2726400018FCB /* Stories.m */; };
+		04A0EB2521C2726E00018FCB /* Comics.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB2421C2726E00018FCB /* Comics.m */; };
+		04A0EB2921C272AB00018FCB /* Thumbnails.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB2821C272AB00018FCB /* Thumbnails.m */; };
+		04A0EB2D21C2739B00018FCB /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB2C21C2739B00018FCB /* Items.m */; };
+		04A0EB4221C288B200018FCB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB4121C288B200018FCB /* MainViewController.m */; };
+		04A0EB4521C288C200018FCB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB4421C288C200018FCB /* DetailViewController.m */; };
+		04A0EB4A21C2891C00018FCB /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB4821C2891C00018FCB /* MainViewCell.m */; };
+		04A0EB4B21C2891C00018FCB /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A0EB4921C2891C00018FCB /* MainViewCell.xib */; };
+		04A0EB4F21C2898200018FCB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB4E21C2898200018FCB /* BaseViewController.m */; };
+		04A0EB5421C28A1500018FCB /* APIRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB5321C28A1500018FCB /* APIRequests.m */; };
+		04A0EB5A21C28B0900018FCB /* CoreDataFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB5921C28B0900018FCB /* CoreDataFunctions.m */; };
+		409BF0502D50C19BDBF243FE /* libPods-MarvelJSONParsing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EEA7631E35C8D0ECE05C77 /* libPods-MarvelJSONParsing.a */; };
+		C24B700ADB6B2773A3112E8D /* libPods-MarvelJSONParsingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9307D292013473D378E1BB54 /* libPods-MarvelJSONParsingUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04A0EAF921C26CAD00018FCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A0EAD521C26C9D00018FCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04A0EADC21C26C9D00018FCB;
+			remoteInfo = MarvelJSONParsing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04A0EADD21C26C9D00018FCB /* MarvelJSONParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelJSONParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A0EAE021C26C9D00018FCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04A0EAE121C26C9D00018FCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04A0EAE721C26C9D00018FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04A0EAEA21C26C9D00018FCB /* MarvelJSONParsing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarvelJSONParsing.xcdatamodel; sourceTree = "<group>"; };
+		04A0EAEC21C26CAD00018FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A0EAEF21C26CAD00018FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04A0EAF121C26CAD00018FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A0EAF221C26CAD00018FCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04A0EAF821C26CAD00018FCB /* MarvelJSONParsingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelJSONParsingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A0EAFC21C26CAD00018FCB /* MarvelJSONParsingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarvelJSONParsingUITests.m; sourceTree = "<group>"; };
+		04A0EAFE21C26CAD00018FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A0EB0821C26D0400018FCB /* JsonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonData.h; sourceTree = "<group>"; };
+		04A0EB0921C26D0400018FCB /* JsonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonData.m; sourceTree = "<group>"; };
+		04A0EB0B21C26DD100018FCB /* DataObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataObject.h; sourceTree = "<group>"; };
+		04A0EB0C21C26DD100018FCB /* DataObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataObject.m; sourceTree = "<group>"; };
+		04A0EB0E21C26F3A00018FCB /* ResutlsArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResutlsArray.h; sourceTree = "<group>"; };
+		04A0EB0F21C26F3A00018FCB /* ResutlsArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResutlsArray.m; sourceTree = "<group>"; };
+		04A0EB1721C2723E00018FCB /* Urls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Urls.h; sourceTree = "<group>"; };
+		04A0EB1821C2723E00018FCB /* Urls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Urls.m; sourceTree = "<group>"; };
+		04A0EB1A21C2724A00018FCB /* Events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		04A0EB1B21C2724A00018FCB /* Events.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		04A0EB1D21C2725800018FCB /* Series.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Series.h; sourceTree = "<group>"; };
+		04A0EB1E21C2725800018FCB /* Series.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Series.m; sourceTree = "<group>"; };
+		04A0EB2021C2726400018FCB /* Stories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stories.h; sourceTree = "<group>"; };
+		04A0EB2121C2726400018FCB /* Stories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stories.m; sourceTree = "<group>"; };
+		04A0EB2321C2726E00018FCB /* Comics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comics.h; sourceTree = "<group>"; };
+		04A0EB2421C2726E00018FCB /* Comics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Comics.m; sourceTree = "<group>"; };
+		04A0EB2721C272AB00018FCB /* Thumbnails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumbnails.h; sourceTree = "<group>"; };
+		04A0EB2821C272AB00018FCB /* Thumbnails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Thumbnails.m; sourceTree = "<group>"; };
+		04A0EB2B21C2739B00018FCB /* Items.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = "<group>"; };
+		04A0EB2C21C2739B00018FCB /* Items.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Items.m; sourceTree = "<group>"; };
+		04A0EB3421C2797F00018FCB /* NSDictionary+Verified.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Verified.m"; sourceTree = "<group>"; };
+		04A0EB3521C2797F00018FCB /* NSDictionary+Verified.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Verified.h"; sourceTree = "<group>"; };
+		04A0EB4021C288B200018FCB /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		04A0EB4121C288B200018FCB /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		04A0EB4321C288C200018FCB /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		04A0EB4421C288C200018FCB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		04A0EB4721C2891C00018FCB /* MainViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
+		04A0EB4821C2891C00018FCB /* MainViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
+		04A0EB4921C2891C00018FCB /* MainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
+		04A0EB4D21C2898200018FCB /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		04A0EB4E21C2898200018FCB /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		04A0EB5221C28A1500018FCB /* APIRequests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequests.h; sourceTree = "<group>"; };
+		04A0EB5321C28A1500018FCB /* APIRequests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequests.m; sourceTree = "<group>"; };
+		04A0EB5821C28B0900018FCB /* CoreDataFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataFunctions.h; sourceTree = "<group>"; };
+		04A0EB5921C28B0900018FCB /* CoreDataFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataFunctions.m; sourceTree = "<group>"; };
+		06EEA7631E35C8D0ECE05C77 /* libPods-MarvelJSONParsing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarvelJSONParsing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68927ECA8264266B5D0593A8 /* Pods-MarvelJSONParsingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelJSONParsingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelJSONParsingUITests/Pods-MarvelJSONParsingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9307D292013473D378E1BB54 /* libPods-MarvelJSONParsingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarvelJSONParsingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C831323C5AA29A7223342DD5 /* Pods-MarvelJSONParsingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelJSONParsingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelJSONParsingUITests/Pods-MarvelJSONParsingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2045AACD797E63C5051AA71 /* Pods-MarvelJSONParsing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelJSONParsing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelJSONParsing/Pods-MarvelJSONParsing.debug.xcconfig"; sourceTree = "<group>"; };
+		ED14D3806B17BD6D51677A47 /* Pods-MarvelJSONParsing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelJSONParsing.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelJSONParsing/Pods-MarvelJSONParsing.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04A0EADA21C26C9D00018FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409BF0502D50C19BDBF243FE /* libPods-MarvelJSONParsing.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A0EAF521C26CAD00018FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24B700ADB6B2773A3112E8D /* libPods-MarvelJSONParsingUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A0EAD421C26C9D00018FCB = {
+			isa = PBXGroup;
+			children = (
+				04A0EADF21C26C9D00018FCB /* MarvelJSONParsing */,
+				04A0EAFB21C26CAD00018FCB /* MarvelJSONParsingUITests */,
+				04A0EADE21C26C9D00018FCB /* Products */,
+				5920FF4966BBE5CEAE327536 /* Pods */,
+				B1F2E0866212203882F502EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04A0EADE21C26C9D00018FCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EADD21C26C9D00018FCB /* MarvelJSONParsing.app */,
+				04A0EAF821C26CAD00018FCB /* MarvelJSONParsingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04A0EADF21C26C9D00018FCB /* MarvelJSONParsing */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB5121C289CB00018FCB /* Core Data Functions */,
+				04A0EB5021C289C200018FCB /* API Requests */,
+				04A0EB4C21C2895F00018FCB /* Main Functionalities */,
+				04A0EB3F21C2889B00018FCB /* Detail Screen */,
+				04A0EB3E21C2889200018FCB /* Main Screen */,
+				04A0EB3321C2797800018FCB /* Helper */,
+				04A0EB0721C26CF100018FCB /* json */,
+				04A0EAE621C26C9D00018FCB /* Main.storyboard */,
+				04A0EAEC21C26CAD00018FCB /* Assets.xcassets */,
+				04A0EAEE21C26CAD00018FCB /* LaunchScreen.storyboard */,
+				04A0EAF121C26CAD00018FCB /* Info.plist */,
+				04A0EAF221C26CAD00018FCB /* main.m */,
+				04A0EAE921C26C9D00018FCB /* MarvelJSONParsing.xcdatamodeld */,
+			);
+			path = MarvelJSONParsing;
+			sourceTree = "<group>";
+		};
+		04A0EAFB21C26CAD00018FCB /* MarvelJSONParsingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EAFC21C26CAD00018FCB /* MarvelJSONParsingUITests.m */,
+				04A0EAFE21C26CAD00018FCB /* Info.plist */,
+			);
+			path = MarvelJSONParsingUITests;
+			sourceTree = "<group>";
+		};
+		04A0EB0721C26CF100018FCB /* json */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB0821C26D0400018FCB /* JsonData.h */,
+				04A0EB0921C26D0400018FCB /* JsonData.m */,
+				04A0EB3621C279A000018FCB /* Data Objects */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		04A0EB1121C2705D00018FCB /* ResultsArray */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB0E21C26F3A00018FCB /* ResutlsArray.h */,
+				04A0EB0F21C26F3A00018FCB /* ResutlsArray.m */,
+				04A0EB3C21C27EF200018FCB /* Data In Result Array */,
+			);
+			path = ResultsArray;
+			sourceTree = "<group>";
+		};
+		04A0EB1221C271F700018FCB /* Comics */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB2321C2726E00018FCB /* Comics.h */,
+				04A0EB2421C2726E00018FCB /* Comics.m */,
+			);
+			path = Comics;
+			sourceTree = "<group>";
+		};
+		04A0EB1321C271FD00018FCB /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB2021C2726400018FCB /* Stories.h */,
+				04A0EB2121C2726400018FCB /* Stories.m */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		04A0EB1421C2721200018FCB /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB1D21C2725800018FCB /* Series.h */,
+				04A0EB1E21C2725800018FCB /* Series.m */,
+			);
+			path = Series;
+			sourceTree = "<group>";
+		};
+		04A0EB1521C2722700018FCB /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB1A21C2724A00018FCB /* Events.h */,
+				04A0EB1B21C2724A00018FCB /* Events.m */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		04A0EB1621C2723000018FCB /* URLS */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB1721C2723E00018FCB /* Urls.h */,
+				04A0EB1821C2723E00018FCB /* Urls.m */,
+			);
+			path = URLS;
+			sourceTree = "<group>";
+		};
+		04A0EB2621C2729800018FCB /* Thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB2721C272AB00018FCB /* Thumbnails.h */,
+				04A0EB2821C272AB00018FCB /* Thumbnails.m */,
+			);
+			path = Thumbnails;
+			sourceTree = "<group>";
+		};
+		04A0EB2A21C2738A00018FCB /* ComicsItems */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB2B21C2739B00018FCB /* Items.h */,
+				04A0EB2C21C2739B00018FCB /* Items.m */,
+			);
+			path = ComicsItems;
+			sourceTree = "<group>";
+		};
+		04A0EB3321C2797800018FCB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB3521C2797F00018FCB /* NSDictionary+Verified.h */,
+				04A0EB3421C2797F00018FCB /* NSDictionary+Verified.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		04A0EB3621C279A000018FCB /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB0B21C26DD100018FCB /* DataObject.h */,
+				04A0EB0C21C26DD100018FCB /* DataObject.m */,
+				04A0EB1121C2705D00018FCB /* ResultsArray */,
+			);
+			path = "Data Objects";
+			sourceTree = "<group>";
+		};
+		04A0EB3C21C27EF200018FCB /* Data In Result Array */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB2A21C2738A00018FCB /* ComicsItems */,
+				04A0EB2621C2729800018FCB /* Thumbnails */,
+				04A0EB1621C2723000018FCB /* URLS */,
+				04A0EB1521C2722700018FCB /* Events */,
+				04A0EB1421C2721200018FCB /* Series */,
+				04A0EB1321C271FD00018FCB /* Stories */,
+				04A0EB1221C271F700018FCB /* Comics */,
+			);
+			path = "Data In Result Array";
+			sourceTree = "<group>";
+		};
+		04A0EB3E21C2889200018FCB /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB4621C2890000018FCB /* Table View Cell */,
+				04A0EB4021C288B200018FCB /* MainViewController.h */,
+				04A0EB4121C288B200018FCB /* MainViewController.m */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		04A0EB3F21C2889B00018FCB /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB4321C288C200018FCB /* DetailViewController.h */,
+				04A0EB4421C288C200018FCB /* DetailViewController.m */,
+			);
+			path = "Detail Screen";
+			sourceTree = "<group>";
+		};
+		04A0EB4621C2890000018FCB /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB4721C2891C00018FCB /* MainViewCell.h */,
+				04A0EB4821C2891C00018FCB /* MainViewCell.m */,
+				04A0EB4921C2891C00018FCB /* MainViewCell.xib */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		04A0EB4C21C2895F00018FCB /* Main Functionalities */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EAE021C26C9D00018FCB /* AppDelegate.h */,
+				04A0EAE121C26C9D00018FCB /* AppDelegate.m */,
+				04A0EB4D21C2898200018FCB /* BaseViewController.h */,
+				04A0EB4E21C2898200018FCB /* BaseViewController.m */,
+			);
+			path = "Main Functionalities";
+			sourceTree = "<group>";
+		};
+		04A0EB5021C289C200018FCB /* API Requests */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB5221C28A1500018FCB /* APIRequests.h */,
+				04A0EB5321C28A1500018FCB /* APIRequests.m */,
+			);
+			path = "API Requests";
+			sourceTree = "<group>";
+		};
+		04A0EB5121C289CB00018FCB /* Core Data Functions */ = {
+			isa = PBXGroup;
+			children = (
+				04A0EB5821C28B0900018FCB /* CoreDataFunctions.h */,
+				04A0EB5921C28B0900018FCB /* CoreDataFunctions.m */,
+			);
+			path = "Core Data Functions";
+			sourceTree = "<group>";
+		};
+		5920FF4966BBE5CEAE327536 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2045AACD797E63C5051AA71 /* Pods-MarvelJSONParsing.debug.xcconfig */,
+				ED14D3806B17BD6D51677A47 /* Pods-MarvelJSONParsing.release.xcconfig */,
+				C831323C5AA29A7223342DD5 /* Pods-MarvelJSONParsingUITests.debug.xcconfig */,
+				68927ECA8264266B5D0593A8 /* Pods-MarvelJSONParsingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1F2E0866212203882F502EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06EEA7631E35C8D0ECE05C77 /* libPods-MarvelJSONParsing.a */,
+				9307D292013473D378E1BB54 /* libPods-MarvelJSONParsingUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04A0EADC21C26C9D00018FCB /* MarvelJSONParsing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A0EB0121C26CAD00018FCB /* Build configuration list for PBXNativeTarget "MarvelJSONParsing" */;
+			buildPhases = (
+				31C8411513B7CC43F1890A0A /* [CP] Check Pods Manifest.lock */,
+				04A0EAD921C26C9D00018FCB /* Sources */,
+				04A0EADA21C26C9D00018FCB /* Frameworks */,
+				04A0EADB21C26C9D00018FCB /* Resources */,
+				3B6132FD1A0894A507B2FB01 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarvelJSONParsing;
+			productName = MarvelJSONParsing;
+			productReference = 04A0EADD21C26C9D00018FCB /* MarvelJSONParsing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04A0EAF721C26CAD00018FCB /* MarvelJSONParsingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A0EB0421C26CAD00018FCB /* Build configuration list for PBXNativeTarget "MarvelJSONParsingUITests" */;
+			buildPhases = (
+				88693A2579DF72ED08CDA3A9 /* [CP] Check Pods Manifest.lock */,
+				04A0EAF421C26CAD00018FCB /* Sources */,
+				04A0EAF521C26CAD00018FCB /* Frameworks */,
+				04A0EAF621C26CAD00018FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04A0EAFA21C26CAD00018FCB /* PBXTargetDependency */,
+			);
+			name = MarvelJSONParsingUITests;
+			productName = MarvelJSONParsingUITests;
+			productReference = 04A0EAF821C26CAD00018FCB /* MarvelJSONParsingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04A0EAD521C26C9D00018FCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Omega;
+				TargetAttributes = {
+					04A0EADC21C26C9D00018FCB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					04A0EAF721C26CAD00018FCB = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 04A0EADC21C26C9D00018FCB;
+					};
+				};
+			};
+			buildConfigurationList = 04A0EAD821C26C9D00018FCB /* Build configuration list for PBXProject "MarvelJSONParsing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04A0EAD421C26C9D00018FCB;
+			productRefGroup = 04A0EADE21C26C9D00018FCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04A0EADC21C26C9D00018FCB /* MarvelJSONParsing */,
+				04A0EAF721C26CAD00018FCB /* MarvelJSONParsingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04A0EADB21C26C9D00018FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A0EAF021C26CAD00018FCB /* LaunchScreen.storyboard in Resources */,
+				04A0EB4B21C2891C00018FCB /* MainViewCell.xib in Resources */,
+				04A0EAED21C26CAD00018FCB /* Assets.xcassets in Resources */,
+				04A0EAE821C26C9D00018FCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A0EAF621C26CAD00018FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31C8411513B7CC43F1890A0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelJSONParsing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B6132FD1A0894A507B2FB01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MarvelJSONParsing/Pods-MarvelJSONParsing-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelJSONParsing/Pods-MarvelJSONParsing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88693A2579DF72ED08CDA3A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelJSONParsingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04A0EAD921C26C9D00018FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A0EB4A21C2891C00018FCB /* MainViewCell.m in Sources */,
+				04A0EB2D21C2739B00018FCB /* Items.m in Sources */,
+				04A0EB5421C28A1500018FCB /* APIRequests.m in Sources */,
+				04A0EB0D21C26DD100018FCB /* DataObject.m in Sources */,
+				04A0EB2521C2726E00018FCB /* Comics.m in Sources */,
+				04A0EB4521C288C200018FCB /* DetailViewController.m in Sources */,
+				04A0EB1021C26F3A00018FCB /* ResutlsArray.m in Sources */,
+				04A0EB5A21C28B0900018FCB /* CoreDataFunctions.m in Sources */,
+				04A0EB1F21C2725800018FCB /* Series.m in Sources */,
+				04A0EB4F21C2898200018FCB /* BaseViewController.m in Sources */,
+				04A0EB2921C272AB00018FCB /* Thumbnails.m in Sources */,
+				04A0EB2221C2726400018FCB /* Stories.m in Sources */,
+				04A0EB1C21C2724A00018FCB /* Events.m in Sources */,
+				04A0EB0A21C26D0400018FCB /* JsonData.m in Sources */,
+				04A0EAEB21C26C9D00018FCB /* MarvelJSONParsing.xcdatamodeld in Sources */,
+				04A0EAF321C26CAD00018FCB /* main.m in Sources */,
+				04A0EAE221C26C9D00018FCB /* AppDelegate.m in Sources */,
+				04A0EB4221C288B200018FCB /* MainViewController.m in Sources */,
+				04A0EB1921C2723E00018FCB /* Urls.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A0EAF421C26CAD00018FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A0EAFD21C26CAD00018FCB /* MarvelJSONParsingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04A0EAFA21C26CAD00018FCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04A0EADC21C26C9D00018FCB /* MarvelJSONParsing */;
+			targetProxy = 04A0EAF921C26CAD00018FCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04A0EAE621C26C9D00018FCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A0EAE721C26C9D00018FCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04A0EAEE21C26CAD00018FCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A0EAEF21C26CAD00018FCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04A0EAFF21C26CAD00018FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04A0EB0021C26CAD00018FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04A0EB0221C26CAD00018FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2045AACD797E63C5051AA71 /* Pods-MarvelJSONParsing.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DBH8AM3E89;
+				INFOPLIST_FILE = MarvelJSONParsing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = omega.MarvelJSONParsing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04A0EB0321C26CAD00018FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED14D3806B17BD6D51677A47 /* Pods-MarvelJSONParsing.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DBH8AM3E89;
+				INFOPLIST_FILE = MarvelJSONParsing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = omega.MarvelJSONParsing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04A0EB0521C26CAD00018FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C831323C5AA29A7223342DD5 /* Pods-MarvelJSONParsingUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DBH8AM3E89;
+				INFOPLIST_FILE = MarvelJSONParsingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = omega.MarvelJSONParsingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarvelJSONParsing;
+			};
+			name = Debug;
+		};
+		04A0EB0621C26CAD00018FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68927ECA8264266B5D0593A8 /* Pods-MarvelJSONParsingUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DBH8AM3E89;
+				INFOPLIST_FILE = MarvelJSONParsingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = omega.MarvelJSONParsingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarvelJSONParsing;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04A0EAD821C26C9D00018FCB /* Build configuration list for PBXProject "MarvelJSONParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A0EAFF21C26CAD00018FCB /* Debug */,
+				04A0EB0021C26CAD00018FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A0EB0121C26CAD00018FCB /* Build configuration list for PBXNativeTarget "MarvelJSONParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A0EB0221C26CAD00018FCB /* Debug */,
+				04A0EB0321C26CAD00018FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A0EB0421C26CAD00018FCB /* Build configuration list for PBXNativeTarget "MarvelJSONParsingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A0EB0521C26CAD00018FCB /* Debug */,
+				04A0EB0621C26CAD00018FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04A0EAE921C26C9D00018FCB /* MarvelJSONParsing.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04A0EAEA21C26C9D00018FCB /* MarvelJSONParsing.xcdatamodel */,
+			);
+			currentVersion = 04A0EAEA21C26C9D00018FCB /* MarvelJSONParsing.xcdatamodel */;
+			path = MarvelJSONParsing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04A0EAD521C26C9D00018FCB /* Project object */;
+}
