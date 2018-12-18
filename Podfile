@@ -8,6 +8,7 @@ target 'MarvelJSONParsing' do
   # Pods for MarvelJSONParsing
 	pod 'SVProgressHUD'
 	pod 'AFNetworking', '~> 3.0'
+	pod 'SDWebImage'
   target 'MarvelJSONParsingUITests' do
     inherit! :search_paths
     # Pods for testing

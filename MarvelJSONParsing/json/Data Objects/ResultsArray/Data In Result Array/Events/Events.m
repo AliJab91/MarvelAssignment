@@ -12,8 +12,8 @@
 -(instancetype)initWithJson:(NSDictionary *)json {
     self = [super init];
     if(self){
-        self.available = [[json verifiedObjectForKey:@"available"] integerValue];
-        self.collectionURL = [json verifiedObjectForKey:@"collectionURI"];
+        self.available = [[json verfiedObjectForKey:@"available"] integerValue];
+        self.collectionURL = [json verfiedObjectForKey:@"collectionURI"];
         NSMutableArray *tempArray = [NSMutableArray new];
         for (NSDictionary *item in json[@"items"]) {
             Items *subItem = [[Items alloc] initWithJson:item];

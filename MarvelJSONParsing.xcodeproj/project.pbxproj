@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046FACC121C79A5C00AFA760 /* NSDictionary+Verified.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FACC021C79A5C00AFA760 /* NSDictionary+Verified.m */; };
 		04A0EAE221C26C9D00018FCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EAE121C26C9D00018FCB /* AppDelegate.m */; };
 		04A0EAE821C26C9D00018FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A0EAE621C26C9D00018FCB /* Main.storyboard */; };
 		04A0EAEB21C26C9D00018FCB /* MarvelJSONParsing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EAE921C26C9D00018FCB /* MarvelJSONParsing.xcdatamodeld */; };
@@ -32,6 +33,7 @@
 		04A0EB5421C28A1500018FCB /* APIRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB5321C28A1500018FCB /* APIRequests.m */; };
 		04A0EB5A21C28B0900018FCB /* CoreDataFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EB5921C28B0900018FCB /* CoreDataFunctions.m */; };
 		409BF0502D50C19BDBF243FE /* libPods-MarvelJSONParsing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EEA7631E35C8D0ECE05C77 /* libPods-MarvelJSONParsing.a */; };
+		4EDE852121C44E5400C42F4E /* WebLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDE852021C44E5400C42F4E /* WebLoaderViewController.m */; };
 		C24B700ADB6B2773A3112E8D /* libPods-MarvelJSONParsingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9307D292013473D378E1BB54 /* libPods-MarvelJSONParsingUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046FACBF21C79A5B00AFA760 /* NSDictionary+Verified.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Verified.h"; sourceTree = "<group>"; };
+		046FACC021C79A5C00AFA760 /* NSDictionary+Verified.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Verified.m"; sourceTree = "<group>"; };
 		04A0EADD21C26C9D00018FCB /* MarvelJSONParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelJSONParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A0EAE021C26C9D00018FCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04A0EAE121C26C9D00018FCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,8 +82,6 @@
 		04A0EB2821C272AB00018FCB /* Thumbnails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Thumbnails.m; sourceTree = "<group>"; };
 		04A0EB2B21C2739B00018FCB /* Items.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = "<group>"; };
 		04A0EB2C21C2739B00018FCB /* Items.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Items.m; sourceTree = "<group>"; };
-		04A0EB3421C2797F00018FCB /* NSDictionary+Verified.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Verified.m"; sourceTree = "<group>"; };
-		04A0EB3521C2797F00018FCB /* NSDictionary+Verified.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Verified.h"; sourceTree = "<group>"; };
 		04A0EB4021C288B200018FCB /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		04A0EB4121C288B200018FCB /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		04A0EB4321C288C200018FCB /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -94,6 +96,8 @@
 		04A0EB5821C28B0900018FCB /* CoreDataFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataFunctions.h; sourceTree = "<group>"; };
 		04A0EB5921C28B0900018FCB /* CoreDataFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataFunctions.m; sourceTree = "<group>"; };
 		06EEA7631E35C8D0ECE05C77 /* libPods-MarvelJSONParsing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarvelJSONParsing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EDE851F21C44E5400C42F4E /* WebLoaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebLoaderViewController.h; sourceTree = "<group>"; };
+		4EDE852021C44E5400C42F4E /* WebLoaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebLoaderViewController.m; sourceTree = "<group>"; };
 		68927ECA8264266B5D0593A8 /* Pods-MarvelJSONParsingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelJSONParsingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelJSONParsingUITests/Pods-MarvelJSONParsingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9307D292013473D378E1BB54 /* libPods-MarvelJSONParsingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarvelJSONParsingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C831323C5AA29A7223342DD5 /* Pods-MarvelJSONParsingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelJSONParsingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelJSONParsingUITests/Pods-MarvelJSONParsingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		04A0EADF21C26C9D00018FCB /* MarvelJSONParsing */ = {
 			isa = PBXGroup;
 			children = (
+				4EDE851E21C44E3500C42F4E /* Wiki Loader Screen */,
 				04A0EB5121C289CB00018FCB /* Core Data Functions */,
 				04A0EB5021C289C200018FCB /* API Requests */,
 				04A0EB4C21C2895F00018FCB /* Main Functionalities */,
@@ -256,8 +261,8 @@
 		04A0EB3321C2797800018FCB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				04A0EB3521C2797F00018FCB /* NSDictionary+Verified.h */,
-				04A0EB3421C2797F00018FCB /* NSDictionary+Verified.m */,
+				046FACBF21C79A5B00AFA760 /* NSDictionary+Verified.h */,
+				046FACC021C79A5C00AFA760 /* NSDictionary+Verified.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -342,6 +347,15 @@
 				04A0EB5921C28B0900018FCB /* CoreDataFunctions.m */,
 			);
 			path = "Core Data Functions";
+			sourceTree = "<group>";
+		};
+		4EDE851E21C44E3500C42F4E /* Wiki Loader Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4EDE851F21C44E5400C42F4E /* WebLoaderViewController.h */,
+				4EDE852021C44E5400C42F4E /* WebLoaderViewController.m */,
+			);
+			path = "Wiki Loader Screen";
 			sourceTree = "<group>";
 		};
 		5920FF4966BBE5CEAE327536 /* Pods */ = {
@@ -544,6 +558,7 @@
 				04A0EB2521C2726E00018FCB /* Comics.m in Sources */,
 				04A0EB4521C288C200018FCB /* DetailViewController.m in Sources */,
 				04A0EB1021C26F3A00018FCB /* ResutlsArray.m in Sources */,
+				046FACC121C79A5C00AFA760 /* NSDictionary+Verified.m in Sources */,
 				04A0EB5A21C28B0900018FCB /* CoreDataFunctions.m in Sources */,
 				04A0EB1F21C2725800018FCB /* Series.m in Sources */,
 				04A0EB4F21C2898200018FCB /* BaseViewController.m in Sources */,
@@ -555,6 +570,7 @@
 				04A0EAF321C26CAD00018FCB /* main.m in Sources */,
 				04A0EAE221C26C9D00018FCB /* AppDelegate.m in Sources */,
 				04A0EB4221C288B200018FCB /* MainViewController.m in Sources */,
+				4EDE852121C44E5400C42F4E /* WebLoaderViewController.m in Sources */,
 				04A0EB1921C2723E00018FCB /* Urls.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,8 +731,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DBH8AM3E89;
+				DEVELOPMENT_TEAM = U7Y6QX97LR;
 				INFOPLIST_FILE = MarvelJSONParsing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -733,8 +750,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DBH8AM3E89;
+				DEVELOPMENT_TEAM = U7Y6QX97LR;
 				INFOPLIST_FILE = MarvelJSONParsing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

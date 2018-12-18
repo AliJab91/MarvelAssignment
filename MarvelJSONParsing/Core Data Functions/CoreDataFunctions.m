@@ -2,8 +2,8 @@
 //  CoreDataFunctions.m
 //  MarvelJSONParsing
 //
-//  Created by Omega on 12/13/18.
-//  Copyright © 2018 Omega. All rights reserved.
+//  Created by Ali Jaber on 17/12/18.
+//  Copyright © 2018 Al Jaber. All rights reserved.
 //
 
 #import "CoreDataFunctions.h"
@@ -12,97 +12,37 @@
 
 
 #pragma mark - get all the leads
-+(NSArray*)retrieveAllData {
++(NSArray*)retrieveAllCharacters {
     NSManagedObjectContext *context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
-    NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"Leads"];
+    NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"Characters"];
     NSError *error ;
     NSArray *resultArray= [context executeFetchRequest:request error:&error];
     return resultArray;
 }
 
-+(void)insertBusinessTypes:(NSString *)businessType businessId:(NSString *)businessId {
+#pragma mark- INSERT CHARACTERS INTO LOCALL DATABASE
++(void)insertCharacter:(NSString *)name  characterId:(NSInteger)characterId wikiUrl:(NSString*)wikiUrl smallImgUrl:(NSString*)smallImgUrl largeImgUrl:(NSString*)largeImgUrl {
     NSManagedObjectContext *context = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
     if(context == nil){
         return;
     }
-    NSManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"BusinessTypes" inManagedObjectContext:context];
-    [object setValue:businessType forKey:@"business_type"];
-    [object setValue:businessId forKey:@"type_id"];
+    NSManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"Characters" inManagedObjectContext:context];
+    NSNumber *convertedCharacterId = @(characterId);
+    [object setValue:name forKey:@"character_name"];
+    [object setValue:convertedCharacterId forKey:@"character_id"];
+    [object setValue:wikiUrl forKey:@"wikiUrl"];
+    [object setValue:smallImgUrl forKey:@"charcter_smallImgUrl"];
+    [object setValue:largeImgUrl forKey:@"character_largeImgUrl"];
     NSError *error;
     if (![context save:&error]) {
         NSLog(@"Failed to save - error: %@", [error localizedDescription]);
     }else {
         NSLog(@"success");
     }
-    
 }
 
-+(void)insertImagesById:(NSMutableArray*)images {
-    if(images.count == 0){
-        return;
-    }
-    for (UIImage *image in images) {
-        NSInteger savedUserId = [[NSUserDefaults standardUserDefaults]integerForKey:@"userId"];
-        NSNumber *convertedUserId = @(savedUserId);
-        NSManagedObjectContext *context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
-        NSManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"Images"
-                                                                inManagedObjectContext:context];
-        NSUUID *uuid = [NSUUID UUID];
-        NSString *uniqueId = [uuid UUIDString];
-        NSData *data = UIImagePNGRepresentation(image);
-        [object setValue:convertedUserId forKey:@"lead_id"];
-        [object setValue:data forKey:@"image"];
-        [object setValue:uniqueId forKey:@"image_id"];
-        NSError *error;
-        if (![context save:&error]) {
-            NSLog(@"Failed to save - error: %@", [error localizedDescription]);
-        }else {
-            NSLog(@"success");
-        }
-    }
-}
 
-+(void)deleteRecordById:(NSInteger)userId {
-    NSManagedObjectContext *context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Leads" inManagedObjectContext:context];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"lead_id == %d",userId];
-    [fetchRequest setEntity:entity];
-    [fetchRequest setPredicate:predicate];
-    NSError *error;
-    NSArray *items = [context executeFetchRequest:fetchRequest error:&error];
-    
-    for (NSManagedObject *managedObject in items)
-    {
-        [context deleteObject:managedObject];
-    }
-}
-
-+(void)deleteImagesById:(NSString *)uniqueId {
-    NSManagedObjectContext *context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Images" inManagedObjectContext:context];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"image_id == %@",uniqueId];
-    [fetchRequest setEntity:entity];
-    [fetchRequest setPredicate:predicate];
-    NSError *error;
-    NSArray *items = [context executeFetchRequest:fetchRequest error:&error];
-    
-    for (NSManagedObject *managedObject in items)
-    {
-        [context deleteObject:managedObject];
-    }
-}
-
-+(NSArray*)returnNumberOfImages:(NSInteger)userId {
-    NSManagedObjectContext *context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Images"];
-    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"lead_id == %d", userId]];
-    NSError *error;
-    NSArray *items = [context executeFetchRequest:fetchRequest error:&error];
-    return items;
-}
-
+#pragma mark- DELETE ALL ENTITIES FROM LOCAL DATABASE
 +(void)deleteAllEntity:(NSString *)entityName{
     NSManagedObjectContext *context = ((AppDelegate*)[[UIApplication sharedApplication] delegate]).persistentContainer.viewContext;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:entityName];

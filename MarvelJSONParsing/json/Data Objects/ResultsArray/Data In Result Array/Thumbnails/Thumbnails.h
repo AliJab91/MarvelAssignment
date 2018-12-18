@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Thumbnails : NSObject
-@property(strong,nonatomic)NSString* path;
+@property(strong,nonatomic)NSString* urlPath;
 @property(strong,nonatomic)NSString* extension;
 -(instancetype)initWithJson:(NSDictionary*)json;
 @end

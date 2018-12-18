@@ -12,8 +12,8 @@
 -(instancetype)initWithJson:(NSDictionary *)json {
     self = [super init];
     if(self){
-        self.resourceUrl = [json verifiedObjectForKey:@"resourceURI"];
-        self.name = [json verifiedObjectForKey:@"name"];
+        self.resourceUrl = [json verfiedObjectForKey:@"resourceURI"];
+        self.name = [json verfiedObjectForKey:@"name"];
     }
     return self;
 }

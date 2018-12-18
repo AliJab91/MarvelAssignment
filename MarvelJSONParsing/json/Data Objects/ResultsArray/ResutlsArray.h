@@ -2,8 +2,8 @@
 //  ResutlsArray.h
 //  MarvelJSONParsing
 //
-//  Created by Omega on 12/13/18.
-//  Copyright © 2018 Omega. All rights reserved.
+//  Created by Ali Jaber on 17/12/18.
+//  Copyright © 2018 Al Jaber. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -25,9 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong,nonatomic) NSArray *urls;
 @property(strong,nonatomic)Events *events;
 @property(strong,nonatomic)Series* series;
-//@property(strong,nonatomic)Urls *urls;
 @property(strong,nonatomic)Stories* stories;
 @property(strong,nonatomic)Comics* comics;
+@property(strong,nonnull) Thumbnails *thumbnail;
 -(instancetype)initWithJson:(NSDictionary*)json;
 
 @end

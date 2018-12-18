@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cx0-gb-BLe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cx0-gb-BLe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,9 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tsv-Um-16d">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tsv-Um-16d">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,7 +35,7 @@
                     <navigationItem key="navigationItem" id="0AS-T9-6qf"/>
                     <connections>
                         <outlet property="tableView" destination="tsv-Um-16d" id="EbC-BI-9xU"/>
-                        <segue destination="cpd-Wm-scy" kind="show" id="9E1-Rb-ljn"/>
+                        <segue destination="cpd-Wm-scy" kind="show" identifier="detailsSegue" id="9E1-Rb-ljn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -49,52 +50,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DWi-HW-YZi">
-                                <rect key="frame" x="0.0" y="64" width="375" height="252"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DWi-HW-YZi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="DWi-HW-YZi" secondAttribute="height" multiplier="125:84" id="oai-7q-e6c"/>
+                                    <constraint firstAttribute="height" constant="300" id="Cu7-2x-0fx"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGX-pe-cDG">
-                                <rect key="frame" x="165" y="349" width="45" height="21"/>
+                                <rect key="frame" x="165" y="394" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPW-KI-Zgg">
-                                <rect key="frame" x="178" y="530" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPW-KI-Zgg">
+                                <rect key="frame" x="30" y="454" width="315" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load Marvels Universe Wiki">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="wikiBtnTapped:" destination="cpd-Wm-scy" eventType="touchUpInside" id="gsa-CE-tha"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ZGX-pe-cDG" firstAttribute="top" secondItem="DWi-HW-YZi" secondAttribute="bottom" constant="33" id="GEa-ND-vUu"/>
-                            <constraint firstItem="DWi-HW-YZi" firstAttribute="top" secondItem="AJx-SP-Isg" secondAttribute="top" id="ISh-5q-o8k"/>
-                            <constraint firstItem="DWi-HW-YZi" firstAttribute="leading" secondItem="AJx-SP-Isg" secondAttribute="leading" id="bHs-PC-yrb"/>
-                            <constraint firstItem="DWi-HW-YZi" firstAttribute="trailing" secondItem="AJx-SP-Isg" secondAttribute="trailing" id="xxw-A1-dyf"/>
+                            <constraint firstItem="DWi-HW-YZi" firstAttribute="top" secondItem="AJx-SP-Isg" secondAttribute="top" id="B3t-MD-gzk"/>
+                            <constraint firstItem="rPW-KI-Zgg" firstAttribute="leading" secondItem="AJx-SP-Isg" secondAttribute="leading" constant="30" id="Cbb-BV-5Ie"/>
+                            <constraint firstItem="DWi-HW-YZi" firstAttribute="leading" secondItem="AJx-SP-Isg" secondAttribute="leading" id="XYi-xk-9MZ"/>
+                            <constraint firstItem="rPW-KI-Zgg" firstAttribute="top" secondItem="ZGX-pe-cDG" secondAttribute="bottom" constant="39" id="fQi-cp-FSQ"/>
+                            <constraint firstItem="DWi-HW-YZi" firstAttribute="trailing" secondItem="AJx-SP-Isg" secondAttribute="trailing" id="kIz-Od-4iL"/>
+                            <constraint firstItem="AJx-SP-Isg" firstAttribute="trailing" secondItem="rPW-KI-Zgg" secondAttribute="trailing" constant="30" id="qUT-ra-v8K"/>
+                            <constraint firstItem="ZGX-pe-cDG" firstAttribute="top" secondItem="DWi-HW-YZi" secondAttribute="bottom" constant="30" id="rV1-GM-Fzf"/>
                             <constraint firstItem="ZGX-pe-cDG" firstAttribute="centerX" secondItem="AJx-SP-Isg" secondAttribute="centerX" id="zHr-Jf-i9L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AJx-SP-Isg"/>
                     </view>
                     <connections>
-                        <segue destination="YVQ-Eq-N7C" kind="show" id="slx-9f-GXx"/>
+                        <outlet property="characterNameLabel" destination="ZGX-pe-cDG" id="Ohu-J0-FNl"/>
+                        <outlet property="imageView" destination="DWi-HW-YZi" id="YTb-Ok-Q7W"/>
+                        <outlet property="wikiBtn" destination="rPW-KI-Zgg" id="tcd-gC-V0p"/>
+                        <segue destination="YVQ-Eq-N7C" kind="show" identifier="wikiWebView" id="slx-9f-GXx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivJ-69-1sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1657" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Web Loader View Controller-->
         <scene sceneID="G4I-IN-6tE">
             <objects>
-                <viewController id="YVQ-Eq-N7C" sceneMemberID="viewController">
+                <viewController id="YVQ-Eq-N7C" customClass="WebLoaderViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XMP-vH-AH3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFT-xx-7TB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JFT-xx-7TB" firstAttribute="top" secondItem="iOL-ng-pCe" secondAttribute="top" id="Tpw-if-J7F"/>
+                            <constraint firstItem="JFT-xx-7TB" firstAttribute="leading" secondItem="iOL-ng-pCe" secondAttribute="leading" id="aV0-SB-O4q"/>
+                            <constraint firstItem="iOL-ng-pCe" firstAttribute="bottom" secondItem="JFT-xx-7TB" secondAttribute="bottom" id="dkl-3I-obK"/>
+                            <constraint firstItem="iOL-ng-pCe" firstAttribute="trailing" secondItem="JFT-xx-7TB" secondAttribute="trailing" id="yHF-cJ-zDI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iOL-ng-pCe"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="JFT-xx-7TB" id="OPk-ej-Q1q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15s-oO-jOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

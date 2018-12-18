@@ -1,15 +1,17 @@
 //
 //  NSDictionary+Verified.m
+//  ACT
 //
-//  Created by Ali Jaber on 8/8/19.
-//  Copyright © 2016 Ali Jaber. All rights reserved.
+//  Created by Ali Jaber on 17/12/18.
+//  Copyright © 2018 Al Jaber. All rights reserved.
 //
 
 #import "NSDictionary+Verified.h"
+#import <UIKit/UIKit.h>
 
 @implementation NSDictionary (Verified)
 
-- (id)verifiedObjectForKey:(NSString *)key {
+- (id)verfiedObjectForKey:(NSString *)key {
     id object = [self objectForKey:key];
     if (object != [NSNull null]) {
         return [self objectForKey:key];
@@ -26,15 +28,13 @@
         return 0;
     }
 }
-
-
-- (id)verifiedFloatForKey:(NSString *)key {
-    id object = [self valueForKey:key];
-    if (![object isEqual:[NSNull null]]) {
-        return [self valueForKey:key];
+- (float)verifiedFloatForKey:(NSString *)key{
+    id object = [self objectForKey:key];
+    if(object != [NSNull null]){
+        return [[self objectForKey:key]floatValue];
+    }else{
+        return 0;
     }
-    else return @"0";
 }
-
 
 @end

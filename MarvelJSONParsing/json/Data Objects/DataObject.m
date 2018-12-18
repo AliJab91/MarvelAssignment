@@ -2,8 +2,8 @@
 //  DataObject.m
 //  MarvelJSONParsing
 //
-//  Created by Omega on 12/13/18.
-//  Copyright © 2018 Omega. All rights reserved.
+//  Created by Ali Jaber on 17/12/18.
+//  Copyright © 2018 Al Jaber. All rights reserved.
 //
 
 #import "DataObject.h"
@@ -12,10 +12,10 @@
 -(instancetype)initWithJson:(NSDictionary *)json {
     self = [super init];
     if (self){
-        self.offSet = [[json verifiedObjectForKey:@"offset"] integerValue];
-        self.limit = [[json verifiedObjectForKey:@"limit"] integerValue];
-        self.total = [[json verifiedObjectForKey:@"total"] integerValue];
-        self.count = [[json verifiedObjectForKey:@"count"] integerValue];
+        self.offSet = [[json verfiedObjectForKey:@"offset"] integerValue];
+        self.limit = [[json verfiedObjectForKey:@"limit"] integerValue];
+        self.total = [[json verfiedObjectForKey:@"total"] integerValue];
+        self.count = [[json verfiedObjectForKey:@"count"] integerValue];
         NSMutableArray *tempArray = [NSMutableArray new];
         for (NSDictionary *item in json[@"results"]){
             ResutlsArray *result = [[ResutlsArray alloc] initWithJson:item];
